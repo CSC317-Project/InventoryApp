@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ims.inventoryapp.Controllers.Owner.DashboardController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="650.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1003.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="0.6777251184834123" startX="0.42654028436018954" startY="0.11848341232227488">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.6901960968971252" green="0.8980392217636108" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.006711409395973154">
+                  <color>
+                     <Color red="0.6901960968971252" green="0.8980392217636108" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill></Rectangle>
+   <Text fx:id="username_lbl" layoutX="38.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi Agnes" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="17.15234375">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Text>
+   <Label fx:id="login_date_lbl" layoutX="843.0" layoutY="32.0" text="Today, 18-03-2022" textFill="#6f6b6b" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="32.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Text fx:id="stock_summary_lbl" layoutX="839.375" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Summary" AnchorPane.rightAnchor="46.0625">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Text>
+   <ListView layoutX="38.0" layoutY="304.0" prefHeight="234.0" prefWidth="922.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="43.0" />
+   <Label fx:id="login_date_lbl1" layoutX="38.0" layoutY="354.0" prefHeight="27.0" prefWidth="118.0" text="Latest Sales">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <AnchorPane layoutX="760.0" layoutY="119.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+            <effect>
+               <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+                  <color>
+                     <Color red="0.3552631437778473" green="0.35197368264198303" blue="0.35197368264198303" />
+                  </color>
+               </DropShadow>
+            </effect>
+         </Rectangle>
+         <Line endX="56.0" endY="-15.0" layoutX="128.0" layoutY="69.0" startX="-111.0" startY="-15.0">
+            <effect>
+               <DropShadow />
+            </effect>
+         </Line>
+         <Label fx:id="high_stock_lbl" layoutX="12.0" layoutY="1.0" prefHeight="28.0" prefWidth="92.0" text="Beverages">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="low_stock_lbl" layoutX="17.0" layoutY="59.0" text="Bakery">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="high_stock_value" layoutX="16.0" layoutY="19.0" prefHeight="28.0" prefWidth="56.0" text="+1002" textFill="#0cae60">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="low_stock_value" layoutX="19.0" layoutY="73.0" prefHeight="28.0" prefWidth="62.0" text="-67" textFill="RED">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+</AnchorPane>

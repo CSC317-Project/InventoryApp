@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1003.0" stylesheets="@../../Styles/AddGoodsMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ims.inventoryapp.Controllers.Owner.AddGoodsMenuController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="650.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1003.0">
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.6898148059844971" green="0.8966049551963806" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.006711409395973154">
+                  <color>
+                     <Color red="0.6898148059844971" green="0.8966049551963806" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill></Rectangle>
+   <Text fill="#1d4f8a" layoutX="389.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Goods" wrappingWidth="229.61328125">
+      <font>
+         <Font name="Gill Sans Ultra Bold" size="32.0" />
+      </font>
+   </Text>
+   <Label layoutX="408.0" layoutY="62.0" prefHeight="30.0" prefWidth="187.0" text="Select Category List" textFill="#121212c6">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="cat14_btn" layoutX="33.0" layoutY="120.0" mnemonicParsing="false" prefHeight="239.0" prefWidth="447.0" styleClass="button" text="Beverages, Bead/Bakery, Canned/Jarred, Dairy" textFill="WHITE">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="18.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+            <color>
+               <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+   <Button fx:id="cat57_btn" layoutX="515.0" layoutY="116.0" mnemonicParsing="false" prefHeight="247.0" prefWidth="447.0" styleClass="button" text="Dry/Baking Goods, Frozen Foods, Meat" textFill="WHITE">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="18.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+            <color>
+               <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+   <Button fx:id="cat811_btn" layoutX="270.0" layoutY="406.0" mnemonicParsing="false" prefHeight="215.0" prefWidth="447.0" styleClass="button" text="Produce, Cleaners, Paper Goods, Personal Care" textFill="WHITE">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="18.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+            <color>
+               <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+</AnchorPane>

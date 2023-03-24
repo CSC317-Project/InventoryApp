@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="180.0" stylesheets="@../../Styles/OwnerMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ims.inventoryapp.Controllers.Owner.OwnerMenuController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="650.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <Text fill="WHITE" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Pile" textAlignment="CENTER" wrappingWidth="180.0">
+      <font>
+         <Font name="System Bold" size="30.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+   </Text>
+   <Line endX="164.0" endY="69.0" startX="13.0" startY="69.0" stroke="WHITE" strokeWidth="2.0">
+      <effect>
+         <DropShadow />
+      </effect>
+   </Line>
+   <Button fx:id="dashboard_btn" layoutX="1.0" layoutY="84.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="Dashboard" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="add_goods_btn" layoutY="145.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="Add Goods" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="view_goods_btn" layoutY="207.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="View Goods" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="issue_goods_btn" layoutY="268.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="Issue Goods" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="view_sales_btn" layoutX="1.0" layoutY="331.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="View Sales" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="view_vendors_btn" layoutX="1.0" layoutY="394.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="View Vendors" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="view_bills_btn" layoutX="-1.0" layoutY="459.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="View Bills" textAlignment="CENTER">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="logout_btn" layoutY="599.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="Logout" textAlignment="CENTER" textFill="RED">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+</AnchorPane>
